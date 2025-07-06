@@ -1,0 +1,20 @@
+﻿@model IngredientSearchViewModel
+
+<div class="searchByIngredient">
+	<div class="searchByIngredientMenu">
+		<form asp-action="SearchByIngredients" method="post" role="form">
+			<input type="submit" value="Search by ingredients" class="searchByIngredientButton" />
+			<div class="ingredientsContainer">
+				@for (int i = 0; i < @Model.Ingredients.Count(); i++)
+				{
+					<div>
+						<input asp-for="@Model.Ingredients[i].IsSelected" />
+						<input asp-for="@Model.Ingredients[i].Name" type="hidden" />
+						<span>@Model.Ingredients[i].Name</span>
+					</div>
+				}
+			</div>
+		</form>
+	</div>
+	<partial name="_ResultsGrid" model="@Model.Drinks" />
+</div>

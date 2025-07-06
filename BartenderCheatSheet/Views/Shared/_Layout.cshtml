@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Bartender Cheat Sheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/layout.css" />
+    <link rel="stylesheet" href="~/css/homePage.css" />
+    <link rel="stylesheet" href="~/css/searchPage.css" />
+</head>
+<body>
+    <header>
+        <p class="title">Bartender Cheat Sheet</p>
+        <nav>
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-controller="Search" asp-action="SearchByName">Search by name</a>
+            <a asp-controller="Search" asp-action="SearchByIngredients">Search by ingredients</a>
+            <a asp-controller="Home" asp-action="About">About</a>
+        </nav>
+        <p></p>
+    </header>
+
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <footer>
+        <p>&copy; @DateTime.Now.Year</p>
+    </footer>
+</body>
+</html>

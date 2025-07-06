@@ -1,0 +1,12 @@
+﻿@model NameSearchViewModel
+
+<div class="searchContainer">
+	<div class="searchArea">
+		<form asp-action="SearchByName" method="post" role="form" class="inputForm">
+			<input asp-for="Query" class="textInput" placeholder="Search..." />
+			<input type="submit" value="Search" class="searchButton" />
+		</form>
+	</div>
+
+	<partial name="_ResultsGrid" model="@Model.QueryResult" />
+</div>

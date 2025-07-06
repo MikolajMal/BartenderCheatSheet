@@ -1,0 +1,17 @@
+﻿@model Drink
+
+<div class="drinkContainer">
+	<img class="mainImg" src="@Model.ImageUrl" />
+	<div class="drinkDescriptionContainer">
+		<div>
+			<p class="drinkName">@Model.Name</p>
+			<ul>
+				@foreach (IngredientQuantity ingredientQuantity in Model.MeasurementsOfIngredients)
+				{
+					<li>@ingredientQuantity.NameWithQuantity</li>
+				}
+			</ul>
+		</div>
+		<p class="drinkInstructions">@Model.Instructions</p>
+	</div>
+</div>

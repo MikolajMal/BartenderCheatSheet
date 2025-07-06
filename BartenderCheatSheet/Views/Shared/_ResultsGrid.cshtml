@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Drink>
+
+<div class="grid">
+	@foreach (Drink drink in Model)
+	{
+		<div>
+			<a asp-controller="Drink" asp-action="Index" asp-route-drinkId="@drink.DrinkId">
+				<img src="@drink.ImageUrl" />
+				<p>@drink.Name</p>
+			</a>
+		</div>
+	}
+</div>

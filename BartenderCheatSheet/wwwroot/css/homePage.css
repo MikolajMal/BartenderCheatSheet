@@ -1,0 +1,56 @@
+﻿.drinkContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mainImg {
+    max-height: 450px;
+    max-width: 450px;
+}
+
+.drinkDescriptionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 450px;
+    width: 450px;
+    margin-left: 50px;
+}
+
+.drinkName{
+    font-size: 42px;
+}
+
+.drinkInstructions {
+    font-size: 20px;
+    max-height: 200px;
+    overflow: scroll;
+}
+
+.rndDrinkBtn {
+    font-size: 30px;
+    background-color: var(--crimson-color);
+    color: var(--biscuit-color) !important;
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.aboutPage {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dbLink {
+    font-size: 60px;
+    padding: 10px 40px;
+    border-radius: 20px;
+    background-color: var(--crimson-color);
+    color: var(--biscuit-color) !important;
+}
