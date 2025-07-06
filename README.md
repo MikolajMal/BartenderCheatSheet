@@ -1,19 +1,6 @@
 # BartenderCheatSheet 🍸
 
 > A project built with ASP.NET Core, powered by the public [TheCocktailDB](https://www.thecocktaildb.com/) API. This app features search and ingredient-based filtering.
-
----
-
-## 🎯 Project Purpose
-
-This app was created to:
-
-- develop a functional MVP using public external APIs,
-- demonstrate how to process and normalize non-ideal external data structures (e.g. `strIngredient1–15`),
-- practice clean architecture patterns: DTOs, service layers, domain modeling, filtering logic,
-- showcase engineering skills in handling real-world API limitations (like lack of multi-ingredient search),
-- create a fun, visual project suitable for a portfolio without compromising on code quality.
-
 ---
 ## 💻 Tech Stack
 ![ASP.NET Core MVC](https://img.shields.io/badge/ASP.NET%20Core%20MVC-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
