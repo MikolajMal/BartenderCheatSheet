@@ -1,5 +1,7 @@
 ﻿:root {
-    --navbar-height: 90px;
+    --navbar-height: 10%;
+    --footer-height: 5%;
+    --main-height: 85%;
 
     --crimson-color: #34000b;
     --biscuit-color: #dfbc94;

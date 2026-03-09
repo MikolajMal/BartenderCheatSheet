@@ -64,11 +64,12 @@ nav {
 
 main {
     margin: auto;
-    height: 100%;
+    height: var(--main-height);
     width: 75%;
 }
 
 footer {
     align-self: center;
     margin-top: auto;
+    height: var(--footer-height);
 }
