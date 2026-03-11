@@ -71,11 +71,10 @@ namespace BartenderCheatSheet.Controllers
 			drinks = drinks.Where(d => ids.Contains(d.DrinkId));
 
 			ingredientSearchViewModel.Drinks.Clear();
+			
+			ingredientSearchViewModel.Drinks.AddRange(drinks);
 
-			foreach (Drink drink in drinks)
-			{
-				ingredientSearchViewModel.Drinks.Add(drink);
-			}
+			ingredientSearchViewModel.IngredientsList = string.Join(", ", selectedIngredients.Select(d => d.Name));
 
 			return View(ingredientSearchViewModel);
 		}

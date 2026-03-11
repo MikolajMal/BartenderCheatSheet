@@ -6,5 +6,6 @@ namespace BartenderCheatSheet.ViewModels
 	{
 		public List<Ingredient> Ingredients { get; set; } = new();
 		public List<Drink> Drinks { get; set; } = new();
+		public string? IngredientsList { get; set; }
 	}
 }
