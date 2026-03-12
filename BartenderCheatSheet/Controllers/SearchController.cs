@@ -78,5 +78,11 @@ namespace BartenderCheatSheet.Controllers
 
 			return View(ingredientSearchViewModel);
 		}
+
+		[HttpPost]
+		public async Task<IActionResult> ResetSelectedIngredients(IngredientSearchViewModel ingredientSearchViewModel)
+		{
+			return RedirectToAction(nameof(SearchByIngredients));
+		}
 	}
 }

@@ -65,19 +65,29 @@
 }
 
 .searchButton,
-.searchByIngredientButton {
-    font-size: 20px;
+.searchByIngredientButton,
+.resetSearchByIngredientButton {
     font-family: inherit;
-    margin-left: 20px;
     border-style: none;
     border-radius: 5px;
     background-color: var(--crimson-color);
     color: var(--biscuit-color);
-    padding: 5px 20px;
 }
 
+.searchButton,
 .searchByIngredientButton {
-    margin: 0px;
+    font-size: 20px;
+    padding: 5px 20px;
+    
+}
+
+.searchButton {
+    margin-left: 20px;
+}
+
+.resetSearchByIngredientButton {
+    font-size: 16px;
+    padding: 2px 5px;
 }
 
 .searchByIngredient {
@@ -115,7 +125,7 @@
         margin: 5px;
     }
 
-.selectedIngredientList{
+.selectedIngredientList {
     font-size: 20px;
     font-weight: 700;
 }

@@ -1,15 +1,16 @@
 ﻿@model IngredientSearchViewModel
 
 <div class="searchByIngredient">
-	<form asp-action="SearchByIngredients" method="post" role="form" class="ingredientForm">
+	<form method="post" role="form" class="ingredientForm">
 		<div class="searchByIngredientMenu">
-			<input type="submit" value="Search by ingredients" class="searchByIngredientButton" />
+			<input type="submit" asp-action="SearchByIngredients" value="Search by ingredients" class="searchByIngredientButton" />
 			@if (!string.IsNullOrEmpty(@Model.IngredientsList))
 			{
 				<div class="selectedIngredients">
 					<p>Selected ingredients</p>
 					<p class="selectedIngredientList"> @Model.IngredientsList</p>
 				</div>
+				<input type="submit" asp-action="ResetSelectedIngredients" value="Reset" class="resetSearchByIngredientButton" />
 			}
 			<div class="ingredientsContainer">
 				@for (int i = 0; i < @Model.Ingredients.Count(); i++)
